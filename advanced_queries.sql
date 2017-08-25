@@ -10,10 +10,9 @@ SELECT * FROM authors JOIN books ON (authors.id=6 AND books.author_id =6);
 SELECT * FROM books JOIN authors ON (authors.id = books.author_id) WHERE nationality = 'China' OR nationality='United Kingdom';
 
 -- Find out how many books Albert Camus wrote.
-SELECT COUNT(*) FROM books WHERE author_id = 7;
+
 
 -- Find out how many books written before 1980 were by authors not from the US.
-SELECT COUNT(*) FROM books JOIN authors ON (authors.id = books.author_id) WHERE publication_date<1980 AND nationality !='United States of America';
 
 -- For these last two, you should not need a JOIN.
 
